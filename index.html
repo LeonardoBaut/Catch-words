@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch Words by Leonardo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>CATCH THE WORDS</h1>
+    <div class="marcador">
+         Nivel: <span id="nivel">0</span> |Puntaje: <span id="score">0</span> | Vidas: <span id="lives">3</span> | Puntaje Máximo: <span id="maxscore">0</span>
+    </div>
+    
+    <div class="area" role="application" aria-label="Catch the Words canvas">
+        <canvas id="canvas"></canvas>
+        <div class="entrada">
+            <div class="start">
+                <button id="star_bt" onclick="empezar()">STAR</button>
+            </div>
+            <div class="pause">
+                <button id="pause_bt" onclick="pausar()">PAUSAR</button>
+            </div>
+            <div class="escritura">
+                <h2>Ingresa la palabra:</h2>
+                <input type="text" id="palabra" placeholder="Ingrese la palabra a atrapar">
+            </div>
+        </div>
+    </div>
+
+    <div id="gameterminado">
+        <h2>GAME OVER</h2>
+        <p>Puntaje: <span id="puntajefinal">0</span></p>
+        <button onclick="resetgame()">Jugar de Nuevo</button>
+    </div>
+
+    <script src="js/juego.js"></script>
+</body>
+</html>
