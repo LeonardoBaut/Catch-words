@@ -13,7 +13,7 @@ document.getElementById("maxscore").innerText=maxscore
 const musica = new Audio('sonido/SoundHelix-Song-1.mp3');
 musica.loop = true;
 musica.volume = 0.2;
-musica.play().catch(()=>{}); // evita error de autoplay
+//musica.play().catch(()=>{}); // evita error de autoplay
 
 // Efecto de captura
 //const efecto = new Audio('https://freesound.org/data/previews/320/320654_5260870-lq.mp3');
@@ -118,6 +118,7 @@ function animar(){
 let crearpalabra;
 let redibujo;
 function empezar(){
+    musica.play().catch(()=>{}); 
     document.getElementById("star_bt").style.backgroundColor="green"
     crearpalabra=setInterval(palabra_datos,2000);
     redibujo=setInterval(animar,30);
