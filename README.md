@@ -29,3 +29,7 @@ const dpr = window.devicePixelRatio || 1;
 canvas.width = canvas.clientWidth * dpr;
 canvas.height = canvas.clientHeight * dpr;
 ctx.scale(dpr, dpr);
+
+Se obtiene el contexto 2D del canvas para dibujar texto e imágenes.
+
+Se ajusta la resolución real considerando devicePixelRatio para evitar pixelación.
