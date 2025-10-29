@@ -10,7 +10,7 @@ let maxscore = localStorage.getItem('maxscore') || 0;
 document.getElementById("maxscore").innerText=maxscore
 
 // Música de fondo
-const musica = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+const musica = new Audio('sonido/SoundHelix-Song-1.mp3');
 musica.loop = true;
 musica.volume = 0.2;
 musica.play().catch(()=>{}); // evita error de autoplay
